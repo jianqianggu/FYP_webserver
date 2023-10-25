@@ -1,0 +1,315 @@
+body {
+    height: 100vh;
+    background-color: lightslategray;
+}
+h1 {
+    height: 2.083vw;
+    margin-top: 0vw;
+    margin-bottom: 0vw;
+    text-align: center;
+    font-size: 1.5vw;
+}
+div {
+    display: flex;
+}
+
+/*FPGA GUI Interface Segment*/
+.one {
+    position: relative;
+    height: 20vw;
+    margin-top: 2.5vw;
+    margin-bottom: 0.104vw;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    background-color: blue;
+}
+
+circle {
+    position: absolute;
+    width: 1.302vw;
+    height: 1.302vw;
+    background: white;
+    border-radius: 50vw
+}
+.top_left {
+    top: 1vw;
+    left: 1vw;
+}
+.bottom_left {
+    bottom: 1vw;
+    left: 1vw;
+}
+.top_right {
+    top: 1vw;
+    right: 1vw;
+}
+.bottom_right {
+    bottom: 1vw;
+    right: 1vw;
+}
+
+/* All switches on basys3 */
+switch {
+    position: absolute;
+    width: 1.302vw;
+    height: 3vw;
+    background: black;
+    border-style: solid;
+    border-width: 0.2vw;
+    border-color: burlywood;
+}
+.s0 {
+    bottom: 1vw;
+    left: 5%;
+}
+.s1 {
+    bottom: 1vw;
+    left: 11%;
+}
+.s2 {
+    bottom: 1vw;
+    left: 17%;
+}
+.s3{
+    bottom: 1vw;
+    left: 23.5%;
+}
+.s4{
+    bottom: 1vw;
+    left: 29.5%;
+}
+.s5{
+    bottom: 1vw;
+    left: 35.5%;
+}
+.s6{
+    bottom: 1vw;
+    left: 40.5%;
+}
+.s7{
+    bottom: 1vw;
+    left: 45.75%;
+}
+.s8{
+    bottom: 1vw;
+    right: 45.75%;
+}
+.s9{
+    bottom: 1vw;
+    right: 40.4%;
+}
+.s10{
+    bottom: 1vw;
+    right: 34.5%;
+}
+.s11{
+    bottom: 1vw;
+    right: 28.5%;
+}
+.s12{
+    bottom: 1vw;
+    right: 22.5%;
+}
+.s13{
+    bottom: 1vw;
+    right: 16.6%;
+}
+.s14{
+    bottom: 1vw;
+    right: 11%;
+}
+.s15{
+    bottom: 1vw;
+    right: 5%;
+}
+.power{
+    top: 1vw;
+    left: 11%;
+}
+.sw_on{
+    position: relative;
+    display: inline-block;
+    width: 0.75vw;
+    height: 2vw;
+    left: 0.27vw;
+    top: 0.5vw;
+}
+
+/* slider swtich functions*/
+/* Hide default HTML checkbox */
+.sw_on input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+/* The slider */
+.slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: lightgrey;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    left: 3.5%;
+    right: 3.5%;
+    top: 50%;
+    bottom: 6%;
+    background-color: darkslategray;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+input:checked + .slider {
+    background-color: lightgrey;
+}
+input:focus + .slider {
+    box-shadow: 0 0 1px lightgrey;
+}
+input:checked + .slider:before {
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+
+/*Labels for Switches*/
+.swtxt{
+    position:relative;
+    color: burlywood;
+    font-size: 0.75vw;
+    top: 1.2vw;
+    right: 0.2vw;
+}
+
+jtag{
+    position: absolute;
+    width: 3vw;
+    height: 5vw;
+    background: black;
+}
+.jtop_left{
+    top: 15%;
+    left: -2%;
+}
+.jbottom_left{
+    bottom: 25%;
+    left: -2%;
+}
+.jtop_right{
+    top: 15%;
+    right: -2%;
+}
+.jbottom_right{
+    bottom: 25%;
+    right: -2%;
+}
+
+usb{
+    position: absolute;
+    width: 4vw;
+    height: 5vw;
+    background: grey;
+    right: 20%;
+    top: 0%;
+}
+
+micro_usb{
+    position: absolute;
+    width: 2.5vw;
+    height: 2vw;
+    background: grey;
+    left: 20%;
+    top: 0%;
+}
+
+vga_body{
+    position: absolute;
+    width: 10vw;
+    height: 5vw;
+    background: black;
+    left: 41%;
+    top: 0%;
+}
+vga_metal{
+    position: absolute;
+    width: 10vw;
+    height: 2vw;
+    background: grey;
+    left: 41%;
+    top: -10%;
+}
+
+button_body{
+    position: absolute;
+    width: 1.5vw;
+    height: 1.5vw;
+    background: darkslateblue;
+    border-style: solid;
+    border-width: 0.2vw;
+    border-color: grey;
+}
+.b_bottom {
+    right: 25%;
+    bottom: 25%;
+}
+.b_top {
+    right: 25%;
+    bottom: 50%;
+}
+.b_center {
+    right: 25%;
+    bottom: 37.5%;
+}
+.b_left {
+    right: 30%;
+    bottom: 37.5%;
+}
+.b_right {
+    right: 20%;
+    bottom: 37.5%;
+}
+.control_buttons{
+    position: absolute;
+    width: 1.5vw;
+    height: 1.5vw;
+    background: black;
+    border-radius: 50vw;    
+    border-width: 0.25vw;
+    border-color: lightslategray;
+}
+
+/*Labels for buttons*/
+.btnl{
+    position:relative;
+    color: burlywood;
+    font-size: 0.75vw;
+    right: 2.4vw;
+    top: 0.25vw;
+}
+.btnc{
+    position:relative;
+    color: burlywood;
+    font-size: 0.75vw;
+    right: 0.22vw;
+    top: 1.6vw;
+}
+.btnr{
+    position:relative;
+    color: burlywood;
+    font-size: 0.75vw;
+    left: 2vw;
+    top: 0.25vw;
+}
+
+/*Video Segment*/
+.two {
+    position: relative;
+    height: 25vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
