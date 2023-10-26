@@ -1,3 +1,4 @@
 {
-    "cmake.configureOnOpen": false
+    "cmake.configureOnOpen": false,
+    "cmake.sourceDirectory": "C:/Users/reuel/Desktop/FYP/esp/wifi_mqtt_project/wifi_mqtt/managed_components/espressif__led_strip/examples/led_strip_rmt_ws2812"
 }

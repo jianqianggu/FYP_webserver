@@ -1,168 +1,182 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="/FYP/root/css/fpga.css">
-    </head>
-    <body>
-        <h1>
-            EE2026 Remote FPGA Lab
-        </h1>
-        <div class="one">
-            <circle class="top_left"></circle>
-            <circle class="bottom_left"></circle>
-            <circle class="top_right"></circle>
-            <circle class="bottom_right"></circle>
-            <switch class="s0">
-                <label class="sw_on">
-                    <input type="checkbox">
-                    <span class="slider"></span>
-                </label>
-                <div class="swtxt">SW15</div>
-            </switch>
-            <switch class="s1">
-                <label class="sw_on">
-                    <input type="checkbox">
-                    <span class="slider"></span>
-                </label>
-                <div class="swtxt">SW14</div>
-            </switch>
-            <switch class="s2">
-                <label class="sw_on">
-                    <input type="checkbox">
-                    <span class="slider"></span>
-                </label>
-                <div class="swtxt">SW13</div>
-            </switch>
-            <switch class="s3">
-                <label class="sw_on">
-                    <input type="checkbox">
-                    <span class="slider"></span>
-                </label>
-                <div class="swtxt">SW12</div>
-            </switch>
-            <switch class="s4">
-                <label class="sw_on">
-                    <input type="checkbox">
-                    <span class="slider"></span>
-                </label>
-                <div class="swtxt">SW11</div>
-            </switch>
-            <switch class="s5">
-                <label class="sw_on">
-                    <input type="checkbox">
-                    <span class="slider"></span>
-                </label>
-                <div class="swtxt">SW10</div>
-            </switch>
-            <switch class="s6">
-                <label class="sw_on">
-                    <input type="checkbox">
-                    <span class="slider"></span>
-                </label>
-                <div class="swtxt">SW9</div>
-            </switch>
-            <switch class="s7">
-                <label class="sw_on">
-                    <input type="checkbox">
-                    <span class="slider"></span>
-                </label>
-                <div class="swtxt">SW8</div>
-            </switch>
-            <switch class="s8">
-                <label class="sw_on">
-                    <input type="checkbox">
-                    <span class="slider"></span>
-                </label>
-                <div class="swtxt">SW7</div>
-            </switch>
-            <switch class="s9">
-                <label class="sw_on">
-                    <input type="checkbox">
-                    <span class="slider"></span>
-                </label>
-                <div class="swtxt">SW6</div>
-            </switch>
-            <switch class="s10">
-                <label class="sw_on">
-                    <input type="checkbox">
-                    <span class="slider"></span>
-                </label>
-                <div class="swtxt">SW5</div>
-            </switch>
-            <switch class="s11">
-                <label class="sw_on">
-                    <input type="checkbox">
-                    <span class="slider"></span>
-                </label>
-                <div class="swtxt">SW4</div>
-            </switch>
-            <switch class="s12">
-                <label class="sw_on">
-                    <input type="checkbox">
-                    <span class="slider"></span>
-                </label>
-                <div class="swtxt">SW3</div>
-            </switch>
-            <switch class="s13">
-                <label class="sw_on">
-                    <input type="checkbox">
-                    <span class="slider"></span>
-                </label>
-                <div class="swtxt">SW2</div>
-            </switch>
-            <switch class="s14">
-                <label class="sw_on">
-                    <input type="checkbox">
-                    <span class="slider"></span>
-                </label>
-                <div class="swtxt">SW1</div>
-            </switch>
-            <switch class="s15">
-                <label class="sw_on">
-                    <input type="checkbox">
-                    <span class="slider"></span>
-                </label>
-                <div class="swtxt">SW0</div>
-            </switch>
-            <switch class="power">
-                <label class="sw_on">
-                    <input type="checkbox">
-                    <span class="slider"></span>
-                </label>
-                <div class="swtxt">POWER</div>
-            </switch>
-            <jtag class="jtop_left"></jtag>
-            <jtag class="jbottom_left"></jtag>
-            <jtag class="jbottom_right"></jtag>
-            <jtag class="jtop_right"></jtag>
-            <usb></usb>
-            <micro_usb></micro_usb>
-            <vga_body></vga_body>
-            <vga_metal></vga_metal>
-            <button_body class="b_bottom">
-                <button class="control_buttons"></button>
-                <div class="btnl">BTND</div>
-            </button_body>
-            <button_body class="b_top">
-                <button class="control_buttons"></button>
-                <div class="btnr">BTNT</div>
-            </button_body>
-            <button_body class="b_center">
-                <button class="control_buttons"></button>
-                <div class="btnc">BTNC</div>
-            </button_body>
-            <button_body class="b_left">
-                <button class="control_buttons"></button>
-                <div class="btnl">BTNL</div>
-            </button_body>
-            <button_body class="b_right">
-                <button class="control_buttons"></button>
-                <div class="btnr">BTNR</div>
-            </button_body> 
-        </div>
-        <div class="two">
-            <iframe width="1600" height="480" src="https://www.youtube.com/embed/H4WishN64TA?si=stqG8gla0MKN2hl5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
-    </body>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/fpga.css">
+</head>
+
+<body>
+    <h1>
+        EE2026 Remote FPGA Lab
+    </h1>
+    <div class="one">
+        <circle class="top_left"></circle>
+        <circle class="bottom_left"></circle>
+        <circle class="top_right"></circle>
+        <circle class="bottom_right"></circle>
+        <switch class="s0">
+            <label class="sw_on">
+                <input type="checkbox" id="myCheck" value="myvalue">
+                <span class="slider"></span>
+            </label>
+            <div class="swtxt">SW15</div>
+        </switch>
+        <switch class="s1">
+            <label class="sw_on">
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
+            <div class="swtxt">SW14</div>
+        </switch>
+        <switch class="s2">
+            <label class="sw_on">
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
+            <div class="swtxt">SW13</div>
+        </switch>
+        <switch class="s3">
+            <label class="sw_on">
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
+            <div class="swtxt">SW12</div>
+        </switch>
+        <switch class="s4">
+            <label class="sw_on">
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
+            <div class="swtxt">SW11</div>
+        </switch>
+        <switch class="s5">
+            <label class="sw_on">
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
+            <div class="swtxt">SW10</div>
+        </switch>
+        <switch class="s6">
+            <label class="sw_on">
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
+            <div class="swtxt">SW9</div>
+        </switch>
+        <switch class="s7">
+            <label class="sw_on">
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
+            <div class="swtxt">SW8</div>
+        </switch>
+        <switch class="s8">
+            <label class="sw_on">
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
+            <div class="swtxt">SW7</div>
+        </switch>
+        <switch class="s9">
+            <label class="sw_on">
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
+            <div class="swtxt">SW6</div>
+        </switch>
+        <switch class="s10">
+            <label class="sw_on">
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
+            <div class="swtxt">SW5</div>
+        </switch>
+        <switch class="s11">
+            <label class="sw_on">
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
+            <div class="swtxt">SW4</div>
+        </switch>
+        <switch class="s12">
+            <label class="sw_on">
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
+            <div class="swtxt">SW3</div>
+        </switch>
+        <switch class="s13">
+            <label class="sw_on">
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
+            <div class="swtxt">SW2</div>
+        </switch>
+        <switch class="s14">
+            <label class="sw_on">
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
+            <div class="swtxt">SW1</div>
+        </switch>
+        <switch class="s15">
+            <label class="sw_on">
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
+            <div class="swtxt">SW0</div>
+        </switch>
+        <switch class="power">
+            <label class="sw_on">
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
+            <div class="swtxt">POWER</div>
+        </switch>
+        <jtag class="jtop_left"></jtag>
+        <jtag class="jbottom_left"></jtag>
+        <jtag class="jbottom_right"></jtag>
+        <jtag class="jtop_right"></jtag>
+        <usb></usb>
+        <micro_usb></micro_usb>
+        <vga_body></vga_body>
+        <vga_metal></vga_metal>
+        <button_body class="b_bottom">
+            <button class="control_buttons"></button>
+            <div class="btnl">BTND</div>
+        </button_body>
+        <button_body class="b_top">
+            <button class="control_buttons"></button>
+            <div class="btnr">BTNT</div>
+        </button_body>
+        <button_body class="b_center">
+            <button class="control_buttons"></button>
+            <div class="btnc">BTNC</div>
+        </button_body>
+        <button_body class="b_left">
+            <button class="control_buttons"></button>
+            <div class="btnl">BTNL</div>
+        </button_body>
+        <button_body class="b_right">
+            <button class="control_buttons"></button>
+            <div class="btnr">BTNR</div>
+        </button_body>
+        <button_body class="b_reset">
+            <button class="reset_button"></button>
+            <div class="btnc">RESET</div>
+        </button_body>
+    </div>
+    <div class="two">
+        <iframe width="1600" height="480" src="https://www.youtube.com/embed/H4WishN64TA?si=stqG8gla0MKN2hl5"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+    </div>
+    <div class="three">
+        <div id="arrayText"></div>
+    </div>
+    <script src="../js/io.js"></script>
+</body>
+
 </html>

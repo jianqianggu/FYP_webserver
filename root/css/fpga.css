@@ -2,6 +2,7 @@ body {
     height: 100vh;
     background-color: lightslategray;
 }
+
 h1 {
     height: 2.083vw;
     margin-top: 0vw;
@@ -9,6 +10,7 @@ h1 {
     text-align: center;
     font-size: 1.5vw;
 }
+
 div {
     display: flex;
 }
@@ -31,18 +33,22 @@ circle {
     background: white;
     border-radius: 50vw
 }
+
 .top_left {
     top: 1vw;
     left: 1vw;
 }
+
 .bottom_left {
     bottom: 1vw;
     left: 1vw;
 }
+
 .top_right {
     top: 1vw;
     right: 1vw;
 }
+
 .bottom_right {
     bottom: 1vw;
     right: 1vw;
@@ -58,75 +64,93 @@ switch {
     border-width: 0.2vw;
     border-color: burlywood;
 }
+
 .s0 {
     bottom: 1vw;
     left: 5%;
 }
+
 .s1 {
     bottom: 1vw;
     left: 11%;
 }
+
 .s2 {
     bottom: 1vw;
     left: 17%;
 }
-.s3{
+
+.s3 {
     bottom: 1vw;
     left: 23.5%;
 }
-.s4{
+
+.s4 {
     bottom: 1vw;
     left: 29.5%;
 }
-.s5{
+
+.s5 {
     bottom: 1vw;
     left: 35.5%;
 }
-.s6{
+
+.s6 {
     bottom: 1vw;
     left: 40.5%;
 }
-.s7{
+
+.s7 {
     bottom: 1vw;
     left: 45.75%;
 }
-.s8{
+
+.s8 {
     bottom: 1vw;
     right: 45.75%;
 }
-.s9{
+
+.s9 {
     bottom: 1vw;
     right: 40.4%;
 }
-.s10{
+
+.s10 {
     bottom: 1vw;
     right: 34.5%;
 }
-.s11{
+
+.s11 {
     bottom: 1vw;
     right: 28.5%;
 }
-.s12{
+
+.s12 {
     bottom: 1vw;
     right: 22.5%;
 }
-.s13{
+
+.s13 {
     bottom: 1vw;
     right: 16.6%;
 }
-.s14{
+
+.s14 {
     bottom: 1vw;
     right: 11%;
 }
-.s15{
+
+.s15 {
     bottom: 1vw;
     right: 5%;
 }
-.power{
+
+.power {
     top: 1vw;
     left: 11%;
 }
-.sw_on{
+
+.sw_on {
     position: relative;
     display: inline-block;
     width: 0.75vw;
@@ -142,8 +166,9 @@ switch {
     width: 0;
     height: 0;
 }
+
 /* The slider */
-.slider{
+.slider {
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -154,6 +179,7 @@ switch {
     -webkit-transition: .4s;
     transition: .4s;
 }
+
 .slider:before {
     position: absolute;
     content: "";
@@ -165,51 +191,58 @@ switch {
     -webkit-transition: .4s;
     transition: .4s;
 }
-input:checked + .slider {
+
+input:checked+.slider {
     background-color: lightgrey;
 }
-input:focus + .slider {
+
+input:focus+.slider {
     box-shadow: 0 0 1px lightgrey;
 }
-input:checked + .slider:before {
+
+input:checked+.slider:before {
     -webkit-transform: translateY(-100%);
     -ms-transform: translateY(-100%);
     transform: translateY(-100%);
 }
 
 /*Labels for Switches*/
-.swtxt{
-    position:relative;
+.swtxt {
+    position: relative;
     color: burlywood;
     font-size: 0.75vw;
     top: 1.2vw;
     right: 0.2vw;
 }
 
-jtag{
+jtag {
     position: absolute;
     width: 3vw;
     height: 5vw;
     background: black;
 }
-.jtop_left{
+
+.jtop_left {
     top: 15%;
     left: -2%;
 }
-.jbottom_left{
+
+.jbottom_left {
     bottom: 25%;
     left: -2%;
 }
-.jtop_right{
+
+.jtop_right {
     top: 15%;
     right: -2%;
 }
-.jbottom_right{
+
+.jbottom_right {
     bottom: 25%;
     right: -2%;
 }
 
-usb{
+usb {
     position: absolute;
     width: 4vw;
     height: 5vw;
@@ -218,7 +251,7 @@ usb{
     top: 0%;
 }
 
-micro_usb{
+micro_usb {
     position: absolute;
     width: 2.5vw;
     height: 2vw;
@@ -227,7 +260,7 @@ micro_usb{
     top: 0%;
 }
 
-vga_body{
+vga_body {
     position: absolute;
     width: 10vw;
     height: 5vw;
@@ -235,7 +268,8 @@ vga_body{
     left: 41%;
     top: 0%;
 }
-vga_metal{
+
+vga_metal {
     position: absolute;
     width: 10vw;
     height: 2vw;
@@ -244,7 +278,7 @@ vga_metal{
     top: -10%;
 }
 
-button_body{
+button_body {
     position: absolute;
     width: 1.5vw;
     height: 1.5vw;
@@ -253,53 +287,76 @@ button_body{
     border-width: 0.2vw;
     border-color: grey;
 }
+
 .b_bottom {
     right: 25%;
     bottom: 25%;
 }
+
 .b_top {
     right: 25%;
     bottom: 50%;
 }
+
 .b_center {
     right: 25%;
     bottom: 37.5%;
 }
+
 .b_left {
     right: 30%;
     bottom: 37.5%;
 }
+
 .b_right {
     right: 20%;
     bottom: 37.5%;
 }
-.control_buttons{
+
+.b_reset {
+    right: 10%;
+    bottom: 90%;
+}
+
+.control_buttons {
     position: absolute;
     width: 1.5vw;
     height: 1.5vw;
     background: black;
-    border-radius: 50vw;    
+    border-radius: 50vw;
+    border-width: 0.25vw;
+    border-color: lightslategray;
+}
+
+.reset_button {
+    position: absolute;
+    width: 1.5vw;
+    height: 1.5vw;
+    background: red;
+    border-radius: 50vw;
     border-width: 0.25vw;
     border-color: lightslategray;
 }
 
 /*Labels for buttons*/
-.btnl{
-    position:relative;
+.btnl {
+    position: relative;
     color: burlywood;
     font-size: 0.75vw;
     right: 2.4vw;
     top: 0.25vw;
 }
-.btnc{
-    position:relative;
+
+.btnc {
+    position: relative;
     color: burlywood;
     font-size: 0.75vw;
     right: 0.22vw;
     top: 1.6vw;
 }
-.btnr{
-    position:relative;
+
+.btnr {
+    position: relative;
     color: burlywood;
     font-size: 0.75vw;
     left: 2vw;
@@ -308,6 +365,13 @@ button_body{
 
 /*Video Segment*/
 .two {
+    position: relative;
+    height: 25vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.three {
     position: relative;
     height: 25vw;
     margin-left: 10vw;
