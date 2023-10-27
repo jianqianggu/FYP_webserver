@@ -11,7 +11,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\webpage\\root\\js\\test.js",
+            "program": "${workspaceFolder}\\webpage\\root\\js\\index.js",
             "runtimeExecutable":  "C:\\Program Files\\nodejs\\node.exe"
         }
     ]
