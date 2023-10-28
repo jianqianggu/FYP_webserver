@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/fpga.css">
     <script src="/socket.io/socket.io.js"></script>
-    <script>
-        var socket = io();
-    </script>
+    <script src="../js/io.js"></script>
 </head>
 
 <body>
@@ -21,112 +19,112 @@
         <circle class="bottom_right"></circle>
         <switch class="s0">
             <label class="sw_on">
-                <input type="checkbox" id="myCheck" value="myvalue">
+                <input type="checkbox" id="sw15_cb" onchange="changed()">
                 <span class="slider"></span>
             </label>
             <div class="swtxt">SW15</div>
         </switch>
         <switch class="s1">
             <label class="sw_on">
-                <input type="checkbox">
+                <input type="checkbox" id ="sw14_cb" onchange="changed()">
                 <span class="slider"></span>
             </label>
             <div class="swtxt">SW14</div>
         </switch>
         <switch class="s2">
             <label class="sw_on">
-                <input type="checkbox">
+                <input type="checkbox" id="sw13_cb" onchange="changed()">
                 <span class="slider"></span>
             </label>
             <div class="swtxt">SW13</div>
         </switch>
         <switch class="s3">
             <label class="sw_on">
-                <input type="checkbox">
+                <input type="checkbox" id="sw12_cb" onchange="changed()">
                 <span class="slider"></span>
             </label>
             <div class="swtxt">SW12</div>
         </switch>
         <switch class="s4">
             <label class="sw_on">
-                <input type="checkbox">
+                <input type="checkbox" id="sw11_cb" onchange="changed()">
                 <span class="slider"></span>
             </label>
             <div class="swtxt">SW11</div>
         </switch>
         <switch class="s5">
             <label class="sw_on">
-                <input type="checkbox">
+                <input type="checkbox" id="sw10_cb" onchange="changed()">
                 <span class="slider"></span>
             </label>
             <div class="swtxt">SW10</div>
         </switch>
         <switch class="s6">
             <label class="sw_on">
-                <input type="checkbox">
+                <input type="checkbox" id="sw9_cb" onchange="changed()">
                 <span class="slider"></span>
             </label>
             <div class="swtxt">SW9</div>
         </switch>
         <switch class="s7">
             <label class="sw_on">
-                <input type="checkbox">
+                <input type="checkbox" id="sw8_cb" onchange="changed()">
                 <span class="slider"></span>
             </label>
             <div class="swtxt">SW8</div>
         </switch>
         <switch class="s8">
             <label class="sw_on">
-                <input type="checkbox">
+                <input type="checkbox" id="sw7_cb" onchange="changed()">
                 <span class="slider"></span>
             </label>
             <div class="swtxt">SW7</div>
         </switch>
         <switch class="s9">
             <label class="sw_on">
-                <input type="checkbox">
+                <input type="checkbox" id="sw6_cb" onchange="changed()">
                 <span class="slider"></span>
             </label>
             <div class="swtxt">SW6</div>
         </switch>
         <switch class="s10">
             <label class="sw_on">
-                <input type="checkbox">
+                <input type="checkbox" id="sw5_cb" onchange="changed()">
                 <span class="slider"></span>
             </label>
             <div class="swtxt">SW5</div>
         </switch>
         <switch class="s11">
             <label class="sw_on">
-                <input type="checkbox">
+                <input type="checkbox" id="sw4_cb" onchange="changed()">
                 <span class="slider"></span>
             </label>
             <div class="swtxt">SW4</div>
         </switch>
         <switch class="s12">
             <label class="sw_on">
-                <input type="checkbox">
+                <input type="checkbox" id="sw3_cb" onchange="changed()">
                 <span class="slider"></span>
             </label>
             <div class="swtxt">SW3</div>
         </switch>
         <switch class="s13">
             <label class="sw_on">
-                <input type="checkbox">
+                <input type="checkbox" id="sw2_cb" onchange="changed()">
                 <span class="slider"></span>
             </label>
             <div class="swtxt">SW2</div>
         </switch>
         <switch class="s14">
             <label class="sw_on">
-                <input type="checkbox">
+                <input type="checkbox" id="sw1_cb" onchange="changed()">
                 <span class="slider"></span>
             </label>
             <div class="swtxt">SW1</div>
         </switch>
         <switch class="s15">
             <label class="sw_on">
-                <input type="checkbox">
+                <input type="checkbox" id="sw0_cb" onchange="changed()">
                 <span class="slider"></span>
             </label>
             <div class="swtxt">SW0</div>
@@ -180,7 +178,6 @@
     <div class="three">
         <div id="arrayText"></div>
     </div>
-    <script src="../js/io.js"></script>
 </body>
 
 </html>

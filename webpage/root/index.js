@@ -1,9 +1,8 @@
 var express = require('express')
 var app = express();
 const http = require('http');
-const server = http.createServer(app);
-const { Server } = require("socket.io");
-const io = new Server(server);
+const server = http.Server(app);
+const io = require('socket.io')(server); 
 const path = require('path');
 
 // Define the static resource (HTML/CSS/JS/images)
@@ -18,6 +17,14 @@ app.get('/', function (req, res) {
 
 io.on('connection', (socket) => {
   console.log('a user connected');
+  socket.on('disconnect', () => {
+    console.log('user disconnected');
+  });
+  socket.on("sw changed", (arg) => {
+    var arr = arg
+    console.log(arg);
+    io.emit(toString(arr))
+  });
 });
 
 server.listen(4000, '10.245.87.244', () => 
