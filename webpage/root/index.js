@@ -36,7 +36,7 @@ io.on('connection',  (socket) => {
 });
 
 
-const ip = "192.168.56.132"; // Access the system variable SERVER_IP
+const ip = "10.245.87.244"; // Access the system variable SERVER_IP
 
 server.listen(4000, ip, () => {
   console.log(`listening on http://${ip}:4000/`);
