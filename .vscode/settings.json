@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "undefined/subscriptions/a9dfd6a8-b026-4571-8e12-5cb1abd3d78b/resourceGroups/jianqiang/providers/Microsoft.Web/sites/jianqiang-fyp-1",
+    "appService.deploySubpath": "webpage/root"
+}
