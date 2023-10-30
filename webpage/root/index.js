@@ -9,24 +9,35 @@ const path = require('path');
 app.use(express.static(path.join(__dirname, 'public')));             // URL '/' (root) maps to 'public' directory
 
 var publicPath = path.join(__dirname, 'public');
+var arr = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 
+app.get('/data', function(req, res) {
+  res.json(arr);
+  console.log('esp request')
+});
 
 app.get('/', function (req, res) {
   res.sendfile(publicPath + '/pages/main.html');
 });
 
-io.on('connection', (socket) => {
+io.on('connection',  (socket) => {
   console.log('a user connected');
   socket.on('disconnect', () => {
     console.log('user disconnected');
   });
   socket.on("sw changed", (arg) => {
-    var arr = arg
+    arr = arg
     console.log(arg);
-    io.emit(toString(arr))
+    io.emit("update",arr)
+  });
+  socket.on("iot", (arg) => {
+    console.log(arg);
   });
 });
 
-server.listen(4000, '10.245.87.244', () => 
-  console.log('listening on *http://10.245.87.244:4000/')
-);
+
+const ip = "192.168.56.132"; // Access the system variable SERVER_IP
+
+server.listen(4000, ip, () => {
+  console.log(`listening on http://${ip}:4000/`);
+});
